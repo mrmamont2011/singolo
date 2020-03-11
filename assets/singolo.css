@@ -810,7 +810,22 @@ font-weight: 400;
 text-align: left;
 
 }
-
+.contact_forma h3 a{
+  display: block;
+  margin-left: -30px;
+  margin-top: -6px;
+  width: 200px;
+  height: 30px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  
+  
+  }
 
 .Project_loacation {
 padding-top: 0px;
@@ -856,6 +871,17 @@ cursor:pointer;
 word-spacing: 3px;
 
 }
+.footer_solo3 a {
+  padding-top: 7px;
+  padding-left: 0px;
+  opacity:0.5;
+  z-index: 10;
+  filter:alpha;
+  cursor:pointer;
+  word-spacing: 3px;
+  
+  }
+  
 
 .footer_solo3 img {
 color: #f0d8d9;
