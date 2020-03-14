@@ -10,28 +10,29 @@
 </head>
 <body>
     <header>
+        <a name="home"></a>
         <h1 class="logo">
-            SINGOLO<red>*</red>
+            </a> SINGOLO<red>*</red>
         </h1>
             
        
         <div>
             <nav class="navbar">
-                <ul>
+                <ul id="menu">
                         <li>
-                            <a href="#">HOME</a>
+                            <a  class="active" href="#home">HOME</a>
                         </li>
                         <li>
-                            <a href="#">SERVICES</a>
+                            <a href="#services">SERVICES</a>
                         </li>            
                         <li>
-                            <a href="#">PORTFOLIO</a>
+                            <a href="#portfoli_o">PORTFOLIO</a>
                         </li>
                         <li>
-                            <a href="#">ABOUT</a>
+                            <a href="#about">ABOUT</a>
                         </li>
                         <li>
-                            <a href="#">CONTACT</a>
+                            <a href="#contact">CONTACT</a>
                         </li>
                 </ul>       
              </nav>
@@ -40,23 +41,33 @@
        
     </header>
     
-    <div class="slider">
-        <img class="chevlef" src=".\assets\chevleft.png" width="16" height="27">
-        <img class="chevleftmouse" src=".\assets\chevleftmouse.png" width="16" height="27">
-        
-        <img class="iPhoneVerticalon" src=".\assets\iPhoneVerticalon.png" width="215" height="458">
-        <img class="iPhoneVerticaloff" src=".\assets\iPhoneVerticaloff.png" width="240" height="483">
-    
-        <img class="iPhoneHorizontalon" src=".\assets\iPhoneHorizontalon.png" width="458" height="215">
-        <img class="iPhoneHorizontaloff" src=".\assets\iPhoneHorizontaloff.png" width="484" height="240">
-        
-        <img class="chevright" src=".\assets\chevright.png" width="16" height="27">
-        <img class="chevrightmouse" src=".\assets\chevrightmouse.png" width="16" height="27">
-     
+    <div id = "slider_id" >
+        <div id="slider_div" class="slider_1">
+            
+            <img id="button_left" class="chevlef" src=".\assets\chevleft.png" alt="" width="16" height="27">
+            
+            <section id="iphone_vertical" class="iphone_vertical_on">
+                <img id="iphone_vertical_on" src="./assets/iphone_vertical_on.png" alt="" width="240" height="483">
+                <img id="iphone_vertical_off" src="./assets/iphone_vertical_off.png" alt="" width="240" height="483">
+            </section> 
+
+            <section id="iphone_horizontal" class="iphone_horizontal_on">
+                <img id="iphone_horizontal_on" src="./assets/iphone_horizontal_on.png" alt="" width="483" height="240">
+                <img id="iphone_horizontal_off" src="./assets/iphone_horizontal_off.png" alt="" width="483" height="240">
+            </section>
+
+            <section id="iphone_vertical_slide_2" class="iphone_vertical_slide_2_on">
+                <img id="iphone_vertical_slide_2_on" src="./assets/iphone_vertical_slide_2_on.png" alt="" width="255" height="513">
+                <img id="iphone_vertical_slide_2_off" src="./assets/iphone_vertical_slide_2_off.png" alt="" width="255" height="513">
+            </section>
+
+            <img id="button_right" class="chevright" src="./assets/chevright.png" alt="" width="16" height="27">
+
+    </div>
     </div>
 
     <footer>
-        <h1>Our Services</h1>
+        <h1><a name="services"></a>Our Services</h1>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. </p>
         
 
@@ -119,7 +130,7 @@
     <!--  Solo part2-->
 
 
-    <div class="solo2">
+    <div class="solo2"><a name="portfoli_o"></a>
         <div class="test">
             <h1 class="logo2">
                 Portfolio
@@ -127,38 +138,39 @@
             <h2>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</h2>
            
             <div>
-                <nav class="navbar2">
-                    <ul>
-                            <li>
-                                <a href="#">All</a>
-                            </li>
-                            <li>
-                                <a href="#">Web Design</a>
-                            </li>            
-                            <li>
-                                <a href="#">Graphic Design</a>
-                            </li>
-                            <li>
-                                <a href="#">Artwork</a>
-                            </li>
-                            
-                    </ul>       
-                 </nav>
+                <div class="navbar2">
+                    <ul id="menu_portfolio">
+                        <li>
+                            <p class="knopka_on">All</p>
+                        </li>
+                        <li>
+                            <p class="">Web design</p>
+                        </li>
+                        <li>
+                            <p class="">Graphic design</p>
+                        </li>
+                        <li>
+                            <p class="">Artwork</p>
+                        </li>                                                                        
+                     </ul>       
+                         
+                 </div>
                 
             </div>
-            <div class="portfolio">
-                <img class="Project1" src=".\assets\Project1.png">
-                <img class="Project2" src=".\assets\Project2.png">
-                <img class="Project3" src=".\assets\Project3.png">
-                <img class="Project4" src=".\assets\Project4.png">
-                <img class="Project5" src=".\assets\Project5.png">
-                <img class="Project6" src=".\assets\Project6.png">
-                <img class="Project7" src=".\assets\Project7.png">
-                <img class="Project8" src=".\assets\Project8.png">
-                <img class="Project9" src=".\assets\Project9.png">
-                <img class="Project10" src=".\assets\Project10.png">
-                <img class="Project11" src=".\assets\Project11.png">
-                <img class="Project12" src=".\assets\Project12.png">
+            <div id="portfolio">
+                <img class="Project" id = "active_off" src=".\assets\Project1.png">
+                <img class="Project" id = "active_off" src=".\assets\Project2.png">
+                <img class="Project" id = "active_off" src=".\assets\Project3.png">
+                <img class="Project" id = "active_off" src=".\assets\Project4.png">
+                <img class="Project" id = "active_off" src=".\assets\Project5.png">
+                <img class="Project" id = "active_off" src=".\assets\Project6.png">
+                <img class="Project" id = "active_off" src=".\assets\Project7.png">
+                <img class="Project" id = "active_off" src=".\assets\Project8.png">
+                <img class="Project" id = "active_off" src=".\assets\Project9.png">
+                <img class="Project" id = "active_off" src=".\assets\Project10.png">
+                <img class="Project" id = "active_off" src=".\assets\Project11.png">
+                <img class="Project" id = "active_off" src=".\assets\Project12.png">
+                
 
                
             </div>
@@ -167,7 +179,7 @@
         
     
         <div class="aboutus">
-            <h1>About Us</h1>
+            <h1><a name="about"></a>About Us</h1>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             
             <div class="photo">
@@ -225,21 +237,36 @@
     <!--solo part3-->
     <div class="forma">
     
-        <h1 class="logo_forma">Get a Quote</h1>
+        <h1 class="logo_forma"><a name="contact"></a>Get a Quote</h1>
         <h2>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</h2>
         <div class="input_forma">
             <div class="text_forma"></div>  
-            <form class="form_forma" action="#" metod="post" >
-             
-            <input id="forma_1" type='text' name="name" required  placeholder="Name (Required)">
-            <input id="forma_2" type='email'name="name"  required  placeholder="Email (Required)">
-            <input id="forma_3" type='tel' name="name"  placeholder="Subject">
-            <textarea id="forma_4" type='text' style ="resize:none;" placeholder="Describe your project in detail..."></textarea>
-            <input id="forma_5" type="submit" style ="resize:none"; value='Submit'>
-            
+
+            <section class="form_forma" >
+            <input id="forma_1" type='text' name="name" required  placeholder="Name (Required)" value=''>
+            <input id="forma_2" type='email'name="name"  required  placeholder="Email (Required)" value=''>
+            <input id="forma_3" type='tel' name="name"  placeholder="Subject" value=''>
+            <textarea id="forma_4" type='text' style ="resize:none;" placeholder="Describe your project in detail..." value=''></textarea>
+            <button id="forma_5">Submit</button>
+                
                        
           
-            </form> 
+            </section> 
+            
+            <div id="message-block" class="hidden">
+               
+                <div id="message">
+                    <p>Письмо отправлено<br> <span id="result_3"></span><br> <span id="result_4"></span>
+                    </p><br>
+                    <button id="close-btn">OK</button>
+                    
+                </div>
+               
+        
+            </div>
+        
+
+
             <div class="contact_forma">
                 <h1>Contact Information</h1>
                 <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.                 </p>
@@ -264,6 +291,6 @@
     </div>
       
 </div>
-
+<script src="script.js"></script>
 </body>
 </html>

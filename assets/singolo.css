@@ -17,7 +17,7 @@ header {
 
 .logo {
     
-    margin-left: 38px;
+    margin-left: -403px;
     margin-top: 41px;
     font-size: 25px;
     line-height: 6px;
@@ -36,207 +36,267 @@ header {
     
 }
 
+.menu {
+ 
+}
+
 .navbar ul {
     display: flex;
     width: 421px;
   
 }
-
 .navbar ul li a {
-    display: flex;
+  font-family: "Lato";
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  cursor: default;
+  font-size: 12px;
+  line-height: 88px;
+  margin-left: 10px;
+  margin-top: 46px;
+  margin-right: 19px;
+  padding-bottom: 30px;
+  color: #ffffff;
+
+  
+  
+
+  
+}
+
+
+
+.navbar ul li a.active {
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+    cursor: default;
     font-size: 12px;
-    line-height: 6px;
+    line-height: 88px;
     margin-left: 10px;
     margin-top: 46px;
     margin-right: 19px;
-    color: #ffffff;
-    font-family: "Lato";
-    font-weight: 700;
-    text-align: left;
-    text-decoration: none;
- 
-    
-}
-.navbar ul li a:hover {
-    display: flex;
-    font-size: 12px;
-    line-height: 6px;
-    margin-left: 10px;
-    margin-top: 47px;
-    margin-right: 19px;
+    padding-bottom: 30px;
     color: #f06c64;
-    font-family: "Lato";
-    font-weight: 700;
-    text-align: left;
-    text-decoration: none;
+
+    
+    
  
     
 }
 
-.slider {
+ 
+   
+
+.navbar ul li a:not(.active):hover {
+  font-family: "Lato";
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+ 
+  display: flex;
+  font-size: 12px;
+  line-height: 88px;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-right: 19px;
+  color: #f06c64;
+
+
+}
+
+.slider_1 {
 
     width: 1020px;
     height: 600px;
-    background: linear-gradient(to top,
-    #ea676b 0px,
-    #ea676b 6px, 
-    #f06c64 6px,
-    #f06c64 600px);
     display: flex; 
     justify-content: space-between;
-    position:relative;
-    z-index: 1;
+    background-image: url("./border_slide_1.png");
+    
+}
 
+.slider_2 {
+
+  width: 1020px;
+  height: 600px;
+  display: flex; 
+  justify-content: space-between;
+  background-image: url("./border_slide_2.png");
+  
+}
+
+/*--------- vertical -----------*/
+.slider_1 .iphone_vertical_on #iphone_vertical_on {
+  position:absolute;
+  left: 111px;
+  top: 147px;
+  cursor:pointer;
+  
+
+}
+.slider_1 .iphone_vertical_on #iphone_vertical_off{
+  display: none;
+  position:absolute;
+  left: 111px;
+  top: 147px;
+  cursor:pointer;
+ 
+}
+.slider_1 .iphone_vertical_off #iphone_vertical_on {
+  display: none;
+  position:absolute;
+  left: 111px;
+  top: 147px;
+  cursor:pointer;
+  
+  
+
+}
+.slider_1 .iphone_vertical_off #iphone_vertical_off{
+  
+  position:absolute;
+  left: 111px;
+  top: 147px;
+  cursor:pointer;
+  
+  
+}
+
+/*--------- horizontal -----------*/
+
+.slider_1 .iphone_horizontal_on #iphone_horizontal_on {
+  position:absolute;
+  left: 425px;
+  top: 268px;
+  cursor:pointer;
+  
+  
+
+}
+.slider_1 .iphone_horizontal_on #iphone_horizontal_off {
+  display: none;
+  position:absolute;
+  left: 425px;
+  top: 268px;
+  cursor:pointer;
+  
+  }
+
+  .slider_1 .iphone_horizontal_off #iphone_horizontal_on {
+    display: none;
+    position:absolute;
+    left: 425px;
+    top: 268px;
+    cursor:pointer;
+   
+    
+  
+  }
+  .slider_1 .iphone_horizontal_off #iphone_horizontal_off {
+    
+    position:absolute;
+    left: 425px;
+    top: 268px;
+    cursor:pointer;
+    
+    }
+  
+
+
+
+
+.slider_1 #iphone_vertical_slide_2_on {
+  display: none;
+ 
+}
+.slider_1 #iphone_vertical_slide_2_off {
+  display: none;
+ 
+}
+
+.slider_2 #iphone_horizontal{
+  display: none;
+  
+}
+.slider_2 #iphone_vertical{
+  display: none;
+  
+}
+
+.slider_2 .iphone_vertical_slide_2_on #iphone_vertical_slide_2_on{
+  
+  position:absolute;
+  left: 388px;
+  top: 159px;
+  cursor:pointer;
+  
+
+}
+
+.slider_2 .iphone_vertical_slide_2_on #iphone_vertical_slide_2_off {
+  display: none;
+  position:absolute;
+  left: 388px;
+  top: 159px;
+  cursor:pointer;
+  
+
+
+}
+
+.slider_2 .iphone_vertical_slide_2_off #iphone_vertical_slide_2_on{
+  display: none;
+  position:absolute;
+  left: 388px;
+  top: 159px;
+  cursor:pointer;
+ 
+
+}
+
+.slider_2 .iphone_vertical_slide_2_off #iphone_vertical_slide_2_off {
+  
+  position:absolute;
+  left: 388px;
+  top: 159px;
+  cursor:pointer;
+  
 
 }
 
 
 .chevlef {
+    
     position:absolute;
-    left: 43px;
-    top: 282px;
-    opacity:1;
-    filter:alpha;
-}
-
-.chevleftmouse {
-    position:absolute;
-    left: 43px;
-    top: 282px;
-    opacity:0;
-    filter:alpha;
-    }
-
-.chevlef:hover {
-    position:absolute;
-    left: 43px;
-    top: 282px;
-    opacity:0;
-    filter:alpha;
-}
-
-.chevleftmouse:hover{
-    position:absolute;
-    left: 43px;
-    top: 282px;
-    opacity:1;
-    filter:alpha;
+    left: 41px;
+    top: 384px;
     cursor:pointer;
+    opacity: 0.01;
+    
 }
-
-
-
-
-.iPhoneVerticalon {
-    position:absolute;
-    left: 112px;
-    top: 53px;
-    cursor:pointer;
-}
-
-.iPhoneVerticaloff {
-    position:absolute;
-    left: 112px;
-    top: 53px;
-    cursor:pointer;
-}
-
-.iPhoneVerticalon:hover {
-  position:absolute;
-  left: 112px;
-  top: 5px;
-  opacity: 1;   
-  cursor:pointer;
-}
-
-.iPhoneVerticaloff:hover {
-  position:absolute;
-  left: 112px;
-  top: 53px;
-  opacity: 0;
-  cursor:pointer;
-}
-
-
-
-
-
-
-.iPhoneHorizontalon {
-  position:absolute;
-  left: 425px;
-  top: 174px;
-  cursor:pointer;
-}
-
-
-.iPhoneHorizontaloff {
-  position:absolute;
-  left: 425px;
-  top: 174px;
-  cursor:pointer;
-}
-
-.iPhoneHorizontalon:hover {
-  position:absolute;
-  left: 425px;
-  top: 174px;
-  opacity: 1;  
-  cursor:pointer;
-}
-
-
-.iPhoneHorizontaloff:hover {
-  position:absolute;
-  left: 425px;
-  top: 174px;
-  opacity: 0;  
-  cursor:pointer;
-}
-
-
 
 
 
 .chevright {
   position:absolute;
   left: 964px;
-  top: 281px;
-  opacity:1;
-  filter:alpha;
+  top: 383px;
+  opacity: 0.01;;
   cursor:pointer;
+  
 }
 
 
-.chevrightmouse {
-  position:absolute;
-  left: 964px;
-  top: 281px;
-  opacity:0;
-  filter:alpha;
-  cursor:pointer;
-}
 
 
-.chevright:hover {
-  position:absolute;
-  left: 964px;
-  top: 281px;
-  opacity:0;
-  filter:alpha;
-  cursor:pointer;
-}
 
 
-.chevrightmouse:hover {
-  position:absolute;
-  left: 964px;
-  top: 281px;
-  opacity:1;
-  filter:alpha;
-  cursor:pointer;
 
-}
+
+
 
 footer {
   width: 1020px;
@@ -282,7 +342,7 @@ footer p  {
     padding-left: 40px;
     padding-top: 49px;
     display: grid;
-    grid-template-columns: 318px 321px 321px ;
+    grid-template-columns: 320px 320px 320px ;
     grid-template-rows: 123px 123px;
     grid-auto-flow: row;
     cursor:pointer;
@@ -380,7 +440,7 @@ footer p  {
   margin-left: 40px;
   margin-top: -45px;
   width: 940px;
-  height: 57px;
+  height: 45px;
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
@@ -394,52 +454,86 @@ footer p  {
 
 .solo2 .navbar2 ul {
   display: flex;
-  width: 421px;
+  width: 307px;
+  margin-left: 30px;
+  margin-top: -5px;
+  justify-content: space-evenly;
+  
 
 }
 
-.solo2 .navbar2 ul li {
-margin-left: 40px;
-margin-top: -16px;
-margin-right: -31px;
-min-width: 28px;
-height: 20px;
-border-radius: 5px;
-background-color: #2d303a;
-border: 1px solid #666d89;
-text-align: center;
-}
-
-.solo2 .navbar2 ul li a {
-padding-left: 7px;
-padding-right: 5px;
-
-font-size: 12px;
-line-height: 21px;
-color: #767e9e;
-font-family: "Lato";
-font-weight: 400;
-text-align: left;
-text-decoration: none;
+.navbar2 ul li p {
+  text-decoration: none;
+  cursor: pointer ;
+  min-width: 16px;
+  height: 22px;
+  border-radius: 5px;
+  background-color: #2d303a;
+  border: 1px solid #666d89;
+  text-align: center;
+  padding-left: 7px;
+  padding-right: 5px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
 
   
 }
 
-.solo2 .navbar2 ul li:hover {
-margin-left: 40px;
-margin-top: -16px;
-margin-right: -31px;
-min-width: 28px;
-height: 20px;
-border-radius: 5px;
-background-color: #3b330c;
-border: 1px solid #07ec66;
-text-align: center;
+
+
+.navbar2 ul li p.knopka_on {
+  text-decoration: none;
+  cursor: pointer ;
+  min-width: 16px;
+  height: 22px;
+  border-radius: 5px;
+  background-color: #2d303a;
+  border: 1px solid #07ec66;
+  text-align: center;
+  padding-left: 7px;
+  padding-right: 5px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #07ec66;
+  font-family: "Lato"; 
+
+      
+ 
+    
+}
+
+ 
+   
+
+.navbar2 ul li p:not(.knopka_on):hover {
+  text-decoration: none;
+  cursor: pointer ;
+  min-width: 16px;
+  height: 22px;
+  border-radius: 5px;
+  background-color: #2d303a;
+  border: 1px solid #07ec66;
+  text-align: center;
+  padding-left: 7px;
+  padding-right: 5px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #07ec66;
+  font-family: "Lato"; 
+
+      
+
 }
 
 
 
-.solo2 .portfolio {
+
+
+
+.solo2 #portfolio {
 overflow:hidden;
 height: 610px;
 padding-left: 40px;
@@ -454,8 +548,12 @@ gap: 0px;
 }
 
 
+#active_on {
+  outline: 5px solid #f06c64;
+}
 
-.solo2 .portfolio img {
+
+.portfolio  img {
 width: 220px;
 height: 190px;
 object-fit: none;
@@ -463,15 +561,7 @@ object-fit: none;
 
 }
 
-.solo2 .Proj2ect11 {
 
-padding-left: 10px;
-padding-top: 10px;
-width:100%;
-margin: -81px 0 0 -57px;
-border-style: solid;
-
-}
 
 .solo2 .aboutus {
 width: 1020px;
@@ -543,15 +633,28 @@ padding-top: 9px;
 overflow:hidden
 
 }
+.solo2 .photo div img {
+width: 300px;
+height: 300px;
+
+}
+
 
 .solo2 .aboutus div{
 padding-left: 20px;
 padding-top: 24px;
 }
 
-.solo2 .social {
+.social{
+  display: flex;
+  margin: 0;
+  padding: 0;
 
-margin-left: -21px;
+}
+.social img{
+width: 35px !important; 
+height: 35px !important ;
+margin-left: 10px;
 letter-spacing: 2px;
 
 }
@@ -559,6 +662,8 @@ letter-spacing: 2px;
 background-color: lawngreen;
 cursor: pointer;
 }
+
+
 
 /* solo part3*/
 
@@ -826,6 +931,34 @@ text-align: left;
   
   
   }
+  #message-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    
+
+}
+
+#message-block.hidden {
+    display: none;
+
+}
+
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #00f;
+    text-align: center;
+    background-color: #ffffff;
+}
 
 .Project_loacation {
 padding-top: 0px;
